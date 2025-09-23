@@ -11,7 +11,12 @@ This repository contains a LabVIEW tool for embedding and extracting custom data
 - **Data + Image packaging:** Attach measurement data or analysis results directly to the corresponding image.  
 - **Metadata storage:** Add experiment details, configuration parameters, or version info to image files.  
 - **Lightweight data transport:** Send both visual and numerical information in a single portable PNG file.  
-- **Hidden annotations:** Store notes or instructions inside an image without affecting its appearance.
+- **Hidden annotations:** Store notes or instructions inside an image without affecting its appearance.  
+- **Scientific experiments:** Bundle experiment setup, raw data, and results visualization into a single file for easier sharing.  
+- **Quality control:** Save inspection images together with measurement logs for traceability in manufacturing.  
+- **Field work:** Collect photos with embedded sensor readings (temperature, GPS, etc.) for later analysis.  
+- **Archiving:** Preserve both visual documentation and related datasets in one file for long-term storage.  
+- **Secure communication:** Share images with embedded technical or proprietary information without altering appearance.  
 
 ## Included VIs
 
