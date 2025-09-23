@@ -1,8 +1,17 @@
 # PixPack
 
+![PicPack Logo](https://github.com/iattila/pixpack/blob/main/PicPack%20Logo.png)
+
 # PNG Data Embed/Extract Tool (LabVIEW)
 
 This repository contains a LabVIEW tool for embedding and extracting custom data in PNG files.
+
+## Possible Use Cases
+
+- **Data + Image packaging:** Attach measurement data or analysis results directly to the corresponding image.  
+- **Metadata storage:** Add experiment details, configuration parameters, or version info to image files.  
+- **Lightweight data transport:** Send both visual and numerical information in a single portable PNG file.  
+- **Hidden annotations:** Store notes or instructions inside an image without affecting its appearance.
 
 ## Included VIs
 
