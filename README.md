@@ -37,6 +37,8 @@ For simplicity and to avoid external dependencies, these VIs have been extracted
 
 ## Usage
 
+![Usage](https://github.com/iattila/pixpack/blob/main/src/pixpack/example/Example_1_Snippet.png)
+
 1. Provide the PNG file path.  
 2. Specify the output file path (or overwrite the original).  
 3. Supply the data to encode.  
