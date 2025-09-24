@@ -10,6 +10,7 @@
 	<Item Name="private" Type="Folder">
 		<Item Name="MGI Hex Str to U8 Data.vi" Type="VI" URL="../private/MGI Hex Str to U8 Data.vi"/>
 		<Item Name="MGI U8 Data to Hex Str.vi" Type="VI" URL="../private/MGI U8 Data to Hex Str.vi"/>
+		<Item Name="PP.Create.PNG.By.ByteArray.vi" Type="VI" URL="../private/PP.Create.PNG.By.ByteArray.vi"/>
 		<Item Name="PP.Encode.Decode.RC4.vi" Type="VI" URL="../private/PP.Encode.Decode.RC4.vi"/>
 	</Item>
 	<Item Name="public" Type="Folder">
