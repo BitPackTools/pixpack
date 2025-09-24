@@ -1,6 +1,8 @@
 # PixPack
 
-![PicPack Logo](https://github.com/iattila/pixpack/blob/main/PicPack%20Logo.png)
+<div align="center">
+  <img src="https://github.com/BitPackTools/pixpack/blob/main/PicPack%20Logo.png?raw=true" alt="PixPack Logo"/>
+</div>
 
 # PNG Data Embed/Extract Tool (LabVIEW)
 
@@ -29,6 +31,14 @@ This repository contains a LabVIEW tool for embedding and extracting custom data
 - Optional XML export for structured data.  
 - Combine images and related data in a single portable file.  
 - Store hidden notes or annotations without affecting the image appearance.
+
+## Optional External Password for Payloads (2025-09-24)
+
+Previously, the payload password was derived from the filename.  
+Now, you can specify a custom password when encoding or decoding, giving you more flexibility.  
+
+**Note:** If you still rely on the filename as the password, renaming the file will change the password. Use the external password option to avoid this issue.
+
 
 ## Dependencies
 
