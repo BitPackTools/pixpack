@@ -5,16 +5,29 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="example" Type="Folder">
-		<Item Name="Example_1.vi" Type="VI" URL="../example/Example_1.vi"/>
+		<Item Name="Example_Cluster_Payload.vi" Type="VI" URL="../example/Example_Cluster_Payload.vi"/>
+		<Item Name="Example_External_File_Payload.vi" Type="VI" URL="../example/Example_External_File_Payload.vi"/>
 	</Item>
 	<Item Name="private" Type="Folder">
-		<Item Name="MGI Hex Str to U8 Data.vi" Type="VI" URL="../private/MGI Hex Str to U8 Data.vi"/>
-		<Item Name="MGI U8 Data to Hex Str.vi" Type="VI" URL="../private/MGI U8 Data to Hex Str.vi"/>
-		<Item Name="PP.Create.PNG.By.ByteArray.vi" Type="VI" URL="../private/PP.Create.PNG.By.ByteArray.vi"/>
-		<Item Name="PP.Encode.Decode.RC4.vi" Type="VI" URL="../private/PP.Encode.Decode.RC4.vi"/>
+		<Item Name="7zr" Type="Folder">
+			<Item Name="7zr.exe" Type="Document" URL="../private/7zr/7zr.exe"/>
+		</Item>
+		<Item Name="ico" Type="Folder">
+			<Item Name="logo.ico" Type="Document" URL="../private/ico/logo.ico"/>
+		</Item>
+		<Item Name="Encode.Format.ctl" Type="VI" URL="../private/Encode.Format.ctl"/>
+		<Item Name="Get.Flatten.TypeAndData.vi" Type="VI" URL="../private/Get.Flatten.TypeAndData.vi"/>
+		<Item Name="PP.Create.File.By.ByteArray.vi" Type="VI" URL="../private/PP.Create.File.By.ByteArray.vi"/>
+		<Item Name="PP.ReadFile.To.ByteArray.vi" Type="VI" URL="../private/PP.ReadFile.To.ByteArray.vi"/>
+		<Item Name="Read.Decrypt.7zPayload.vi" Type="VI" URL="../private/Read.Decrypt.7zPayload.vi"/>
+		<Item Name="User.Encode.Format.ctl" Type="VI" URL="../private/User.Encode.Format.ctl"/>
+		<Item Name="Write.Encrypted.7zPayload.vi" Type="VI" URL="../private/Write.Encrypted.7zPayload.vi"/>
 	</Item>
 	<Item Name="public" Type="Folder">
+		<Item Name="PP.GUI.vi" Type="VI" URL="../public/PP.GUI.vi"/>
 		<Item Name="PP.PNG.Decode.vim" Type="VI" URL="../public/PP.PNG.Decode.vim"/>
 		<Item Name="PP.PNG.Encode.vi" Type="VI" URL="../public/PP.PNG.Encode.vi"/>
+		<Item Name="PP.PNG.File.Decode.vi" Type="VI" URL="../public/PP.PNG.File.Decode.vi"/>
+		<Item Name="PP.PNG.File.Encode.vi" Type="VI" URL="../public/PP.PNG.File.Encode.vi"/>
 	</Item>
 </Library>
