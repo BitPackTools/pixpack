@@ -18,12 +18,28 @@ This repository contains a LabVIEW tool for embedding and extracting custom data
 - **Quality control:** Save inspection images together with measurement logs for traceability in manufacturing.  
 - **Field work:** Collect photos with embedded sensor readings (temperature, GPS, etc.) for later analysis.  
 - **Archiving:** Preserve both visual documentation and related datasets in one file for long-term storage.  
-- **Secure communication:** Share images with embedded technical or proprietary information without altering appearance.  
+- **Secure communication:** Share images with embedded technical or proprietary information without altering appearance.
+
+## Features
+
+- Embed and extract arbitrary files in PNG images  
+- Password-protected payloads using **7-Zip**  
+- Native LabVIEW implementation (no external toolkits required)  
+- Simple GUI for external file embedding  
+- Lightweight and portable
+
+## Requirements
+
+- **LabVIEW 2020 or newer**  
+- **7zr.exe** (included in [7-Zip](https://www.7-zip.org/) distributions)  
 
 ## Included VIs
 
 - **Encode VI** – Appends data to a PNG file or optionally exports it as XML.  
 - **Decode VI** – Reads back the data from a PNG file, including XML if used.
+
+- `PP.PNG.File.Encode.vi` – Embed external files into PNG  
+- `PP.PNG.File.Decode.vi` – Extract files from PNG  
 
 ## Key Features
 
@@ -32,18 +48,27 @@ This repository contains a LabVIEW tool for embedding and extracting custom data
 - Combine images and related data in a single portable file.  
 - Store hidden notes or annotations without affecting the image appearance.
 
-## Optional External Password for Payloads (2025-09-24)
+## Version 1.1.0 – Changelog
 
-Previously, the payload password was derived from the filename.  
-Now, you can specify a custom password when encoding or decoding, giving you more flexibility.  
+- **Removed MGI dependencies**  
+  Replaced with custom search methods → faster and no external toolkit needed.
+  
+- **Simplified encryption**  
+  Removed LabVIEW Flatten and XML Flatten RC4 encryption.  
+  Now only **byte negation** is applied.
 
-**Note:** If you still rely on the filename as the password, renaming the file will change the password. Use the external password option to avoid this issue.
+- **New external file embedding/extraction**  
+  - `PP.PNG.File.Encode.vi`  
+  - `PP.PNG.File.Decode.vi`  
+  Uses `7zr.exe`, password required.
 
+- **Password-protected payload handling**  
+  - `Write.Encrypted.7zPayload.vi`  
+  - `Read.Decrypt.7zPayload.vi`
 
-## Dependencies
+- **New GUI**  
+  Added for external file embedding, usable in both LabVIEW IDE and built applications.
 
-This tool uses two VIs from the **MGI Library** (BSD 3-Clause License).  
-For simplicity and to avoid external dependencies, these VIs have been extracted from the MGI library and included directly in this repository.
 
 ## Usage
 
@@ -91,6 +116,11 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+### 7-Zip License Notice
+PixPack uses `7zr.exe` from the **7-Zip project**.  
+7-Zip is licensed under the **GNU LGPL** with unRAR restrictions.  
+For more information, see the official [7-Zip License page](https://www.7-zip.org/license.txt).
 
 
 
