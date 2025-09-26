@@ -1,7 +1,7 @@
 # PixPack
 
 <div align="center">
-  <img src="https://github.com/BitPackTools/pixpack/blob/main/PicPack%20Logo.png?raw=true" alt="PixPack Logo"/>
+  <img src="https://github.com/BitPackTools/pixpack/blob/main/PicPack%20Logo.png?raw=true" alt="PixPack Logo" width=300/>
 </div>
 
 # PNG Data Embed/Extract Tool (LabVIEW)
