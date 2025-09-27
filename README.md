@@ -48,8 +48,12 @@ This repository contains a LabVIEW tool for embedding and extracting custom data
 - Combine images and related data in a single portable file.  
 - Store hidden notes or annotations without affecting the image appearance.
 
-## Version 1.1.0 – Changelog
-
+## Changelog
+## Version 1.1.1
+- Refactored **Decode VI**: replaced temporary PNG file creation with direct bytestream-to-image conversion.  
+  - This improves performance and removes the need for intermediate files.  
+-  Note: No build is provided for this version, since the built executable cannot return the image data.  
+## Version 1.1.0
 - **Removed MGI dependencies**  
   Replaced with custom search methods → faster and no external toolkit needed.
   
